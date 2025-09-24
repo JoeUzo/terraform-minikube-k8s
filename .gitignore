@@ -1,0 +1,14 @@
+terraform.tfstate
+terraform.tfvars
+*.tfstate
+*.tfvars
+terraform/
+output.json
+.terraform/
+.terraform.lock.hcl
+bash.exe.stackdump
+instance_ips.json
+export.sh
+backend.hcl
+terraform_init.sh
+.env
