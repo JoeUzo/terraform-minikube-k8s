@@ -11,7 +11,7 @@ module "vpc_module" {
 module "ec2_module" {
   source = "../../modules/compute"
   instance_type = var.ec2_instance_type
-  subnet_id = module.vpc_module.private_subnets[0]
+  subnet_id = module.vpc_module.public_subnets[0]
   vpc_id = module.vpc_module.vpc_id
   my_ec2_name = var.ec2_name
   key_name = var.key_pair_name

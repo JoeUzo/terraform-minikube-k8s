@@ -53,6 +53,7 @@ variable "user_data" {
   description = "User data script content"
   type        = string
   default     = ""
+  sensitive   = true
 }
 
 variable "extra_tags" {
