@@ -16,7 +16,7 @@ module "ec2_module" {
   my_ec2_name = var.ec2_name
   key_name = var.key_pair_name
   use_user_data = var.ec2_use_user_data
-  user_data = file("${path.root}/user_data.sh")
+  user_data = file("${path.root}/scripts/install_minikube.sh")
 
   depends_on = [ module.vpc_module ]
 }
